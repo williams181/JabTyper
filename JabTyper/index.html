@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>JabTyper</title>
+</head>
+<body>
+    <div class="container">
+    <h3 class="center-align">JabTyper</h3>
+    <input type="text" id="nome" placeholder="Nome do jogador">
+    <div class="card-panel">
+    <p class="frase">Desenvolvimento WEB II</p>
+    <ul class="informacoes">
+        <li><span id="tempo">15 </span> segundos</li>
+    </ul>
+    </div>
+    <button id="botao-reiniciar" class="waves-effect waves-light btn">Reset</button><br><br>
+    <textarea id="campo-digitacao" class="materialize-textarea" placeholder="Digite aqui as palavras"></textarea>
+    <div class="card-panel">
+    <ul>
+        <li><span id="caracteres-digitados">0</span> caracteres digitados</li>
+        <li><span id="palavras-digitadas">0</span> palavras digitadas</li>
+    </ul>
+    </div>
+
+    <h4 class="center-align">Placar</h4>
+    <table id="tabela-resultado" class="highlight">
+        <thead>
+            <th>Usuário</th>
+            <th>Nº de Palavras</th>
+        </thead>
+    </table>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
